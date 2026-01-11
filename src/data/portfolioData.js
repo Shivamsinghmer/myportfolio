@@ -1,4 +1,4 @@
-import motion from "../assets/motion.png"
+
 import BRXLabz from "../assets/BRX-Labz.png"
 import Softwater from "../assets/Softwater.png"
 import portfolio from "../assets/portfolio.png"
@@ -12,43 +12,43 @@ import basesepoliafaucet from "../assets/BaseSepoliaFaucet.png"
 import twitterdapp from "../assets/twitterdapp.png"
 
 export const roles = [
-    {
-        company: "BRX Labz",
-        role: "Founder / Full Stack Engineer",
-        date: "Nov 2025 — Present",
-        logo: "BRX",
-        description:
-            "Founder and developer at BRX Labz, building modern, performance-driven websites and web applications while handling projects end-to-end — from planning and design to development, optimization, and deployment.",
-    },
-    {
-        company: "Freelance",
-        role: "Full Stack Engineer",
-        date: "Jul 2024 — Oct 2025",
-        logo: "FR",
-        description:
-            "Freelance web developer building modern, responsive websites and web applications, managing projects end-to-end with a focus on performance, usability, and real-world impact.",
-    },
+  {
+    company: "BRX Labz",
+    role: "Founder / Full Stack Engineer",
+    date: "Nov 2025 — Present",
+    logo: "BRX",
+    description:
+      "Founder and developer at BRX Labz, building modern, performance-driven websites and web applications while handling projects end-to-end — from planning and design to development, optimization, and deployment.",
+  },
+  {
+    company: "Freelance",
+    role: "Full Stack Engineer",
+    date: "Jul 2024 — Oct 2025",
+    logo: "FR",
+    description:
+      "Freelance web developer building modern, responsive websites and web applications, managing projects end-to-end with a focus on performance, usability, and real-world impact.",
+  },
 ];
 
 export const studies = [
-    {
-        school: "Dr. Virendra Swaroop Institute of Computer Studies",
-        course: "Bachelor's degree, Computer Science",
-        date: "Jul 2024 — Present",
-        logo: "Dr. VSICS",
-        grade: "8.0 (till 3rd Sem)",
-        description:
-            "Activities and societies: Presentation and public speaking.",
-    },
-    {
-        school: "N.L. Memorial Public School",
-        course: "Intermediate",
-        date: "Apr 2023 — Feb 2024",
-        logo: "NLMPS",
-        grade: "87%",
-        description:
-            "Building foundational analytical and learning skills.",
-    },
+  {
+    school: "Dr. Virendra Swaroop Institute of Computer Studies",
+    course: "Bachelor's degree, Computer Science",
+    date: "Jul 2024 — Present",
+    logo: "Dr. VSICS",
+    grade: "8.0 (till 3rd Sem)",
+    description:
+      "Activities and societies: Presentation and public speaking.",
+  },
+  {
+    school: "N.L. Memorial Public School",
+    course: "Intermediate",
+    date: "Apr 2023 — Feb 2024",
+    logo: "NLMPS",
+    grade: "87%",
+    description:
+      "Building foundational analytical and learning skills.",
+  },
 ]
 
 export const projects = [
@@ -57,7 +57,7 @@ export const projects = [
     title: "BRX Labz",
     role: "Full Stack Developer",
     description: "End-to-end digital agency website focused on performance, clarity, and scalability.",
-    stack: ["Next.js", "Tailwind CSS", "Node.js", "Vercel","GSAP","Motion React"],
+    stack: ["Next.js", "Tailwind CSS", "Node.js", "Vercel", "GSAP", "Motion React"],
     gradient: "from-blue-500 to-indigo-500",
     bgColor: "#222",
     img: BRXLabz,
@@ -70,7 +70,7 @@ export const projects = [
     title: "Softwater Technologies",
     role: "Full Stack Developer",
     description: "Business website for a water treatment solutions provider.",
-    stack: ["Next.js", "Tailwind CSS", "Node.js", "Vercel","GSAP","Motion React"],
+    stack: ["Next.js", "Tailwind CSS", "Node.js", "Vercel", "GSAP", "Motion React"],
     gradient: "from-blue-500 to-indigo-500",
     bgColor: "#ACD6F1",
     img: Softwater,
@@ -83,7 +83,7 @@ export const projects = [
     title: "3D Portfolio",
     role: "Frontend Developer",
     description: "Interactive portfolio website with immersive 3D elements.",
-    stack: ["React", "Three.js", "Tailwind CSS", "Node.js", "Vercel","GSAP","Motion React"],
+    stack: ["React", "Three.js", "Tailwind CSS", "Node.js", "Vercel", "GSAP", "Motion React"],
     gradient: "from-zinc-600 to-stone-600",
     bgColor: "#000000",
     img: portfolio,
@@ -96,7 +96,7 @@ export const projects = [
     title: "SecureChat",
     role: "Full Stack Developer",
     description: "Real-time private chat application using WebSockets.",
-    stack: ["React", "Node.js", "Socket.io", "Tailwind CSS", "Vercel","GSAP","Motion React"],
+    stack: ["React", "Node.js", "Socket.io", "Tailwind CSS", "Vercel", "GSAP", "Motion React"],
     gradient: "from-zinc-600 to-stone-600",
     bgColor: "#111111",
     img: securechat,
@@ -135,7 +135,7 @@ export const projects = [
     title: "Resumind",
     role: "Full Stack Developer",
     description: "AI-powered resume analysis web application.",
-    stack: ["React", "Node.js", "Gemini API", "Tailwind CSS", "Vercel","GSAP"],
+    stack: ["React", "Node.js", "Gemini API", "Tailwind CSS", "Vercel", "GSAP"],
     gradient: "from-zinc-600 to-stone-600",
     bgColor: "#EBC",
     img: resumind,
@@ -148,7 +148,7 @@ export const projects = [
     title: "Solana Wallet Services",
     role: "Full Stack Web3 Developer",
     description: "Web-based utility services for Solana wallets.",
-    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel","GSAP"],
+    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel", "GSAP"],
     gradient: "from-zinc-600 to-stone-600",
     bgColor: "#301934",
     img: solanawallet,
@@ -161,7 +161,7 @@ export const projects = [
     title: "Twitter Dapp",
     role: "Full Stack Web3 Developer",
     description: "Decentralized Twitter-like social media application.",
-    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel","GSAP"],
+    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel", "GSAP"],
     gradient: "from-zinc-600 to-stone-600",
     bgColor: "#002137",
     img: twitterdapp,
@@ -174,7 +174,7 @@ export const projects = [
     title: "Solana Wallet Adapter",
     role: "Full Stack Web3 Developer",
     description: "Wallet connection and transaction signing using Solana.",
-    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel","GSAP"],
+    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel", "GSAP"],
     gradient: "from-zinc-600 to-stone-600",
     bgColor: "#6A5ACD",
     img: walletadapter,
@@ -187,7 +187,7 @@ export const projects = [
     title: "Base Sepolia Faucet Web3",
     role: "Full Stack Web3 Developer",
     description: "Testnet faucet application for Base Sepolia network.",
-    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel","GSAP"],
+    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel", "GSAP"],
     gradient: "from-zinc-600 to-stone-600",
     bgColor: "#002137",
     img: basesepoliafaucet,
@@ -199,40 +199,40 @@ export const projects = [
 
 
 export const techStack = [
-    { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", url: "https://www.typescriptlang.org" },
-    { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-    { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", url: "https://nodejs.org" },
-    { name: "Bun", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bun/bun-original.svg", url: "https://bun.sh", invertDark: true },
-    { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", url: "https://react.dev" },
-    { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", url: "https://nextjs.org", invertDark: true },
-    { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg", url: "https://tailwindcss.com" },
-    { name: "Shadcn UI", icon: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4", url: "https://ui.shadcn.com", invertDark: true },
-    { name: "Three.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg", url: "https://threejs.org", invertDark: true },
-    { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg", url: "https://redux.js.org" },
-    { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", url: "https://git-scm.com" },
-    { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", url: "https://www.docker.com" },
-    { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", url: "https://www.mongodb.com" },
-    { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", url: "https://www.figma.com" },
-    { name: "OpenAI", icon: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg", url: "https://openai.com", invertDark: true },
-    { name: "NeonDB", icon: "https://neon.com/_next/static/svgs/9ec344e46390fe939d46984bf9cecaa7.svg", darkIcon: "https://neon.com/_next/static/svgs/6da928883916f39a4848774319dcaf81.svg", url: "https://neon.tech" },
-    { name: "Gemini API", icon: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg", url: "https://deepmind.google/technologies/gemini/" },
-    { name: "Motion React", icon: "https://cdn.worldvectorlogo.com/logos/framer-motion.svg", url: "https://motion.dev/" },
-    { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", url: "https://expressjs.com", invertDark: true },
-    { name: "Socket.io", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg", url: "https://socket.io/" , invertDark: true},
-    { name: "Zustand", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/zustand/zustand-original.svg", url: "https://github.com/immerjs/zustand" },
-    { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", url: "https://www.postgresql.org" },
-    { name: "Prisma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg", url: "https://www.prisma.io" },
-    { name: "express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", url: "https://expressjs.com", invertDark: true },
-    { name: "GSAP", icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg", url: "http://gsap.com/" },
-    { name: "Web3.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/web3js/web3js-original.svg", url: "https://web3js.org" },
-    { name: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg", url: "https://vercel.com", invertDark: true },
+  { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", url: "https://www.typescriptlang.org" },
+  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", url: "https://nodejs.org" },
+  { name: "Bun", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bun/bun-original.svg", url: "https://bun.sh", invertDark: true },
+  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", url: "https://react.dev" },
+  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", url: "https://nextjs.org", invertDark: true },
+  { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg", url: "https://tailwindcss.com" },
+  { name: "Shadcn UI", icon: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4", url: "https://ui.shadcn.com", invertDark: true },
+  { name: "Three.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg", url: "https://threejs.org", invertDark: true },
+  { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg", url: "https://redux.js.org" },
+  { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", url: "https://git-scm.com" },
+  { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", url: "https://www.docker.com" },
+  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", url: "https://www.mongodb.com" },
+  { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", url: "https://www.figma.com" },
+  { name: "OpenAI", icon: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg", url: "https://openai.com", invertDark: true },
+  { name: "NeonDB", icon: "https://neon.com/_next/static/svgs/9ec344e46390fe939d46984bf9cecaa7.svg", darkIcon: "https://neon.com/_next/static/svgs/6da928883916f39a4848774319dcaf81.svg", url: "https://neon.tech" },
+  { name: "Gemini API", icon: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg", url: "https://deepmind.google/technologies/gemini/" },
+  { name: "Motion React", icon: "https://cdn.worldvectorlogo.com/logos/framer-motion.svg", url: "https://motion.dev/" },
+  { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", url: "https://expressjs.com", invertDark: true },
+  { name: "Socket.io", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg", url: "https://socket.io/", invertDark: true },
+  { name: "Zustand", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/zustand/zustand-original.svg", url: "https://github.com/immerjs/zustand" },
+  { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", url: "https://www.postgresql.org" },
+  { name: "Prisma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg", url: "https://www.prisma.io" },
+  { name: "express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", url: "https://expressjs.com", invertDark: true },
+  { name: "GSAP", icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg", url: "http://gsap.com/" },
+  { name: "Web3.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/web3js/web3js-original.svg", url: "https://web3js.org" },
+  { name: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg", url: "https://vercel.com", invertDark: true },
 ];
 
 export const socialLinks = {
-    site: "https://shivammer.me",
-    github: "https://github.com/ShivamSinghMer",
-    twitter: "https://twitter.com/Shivamsinghmer",
-    linkedin: "https://www.linkedin.com/in/shivam-singh-mer02112006",
-    instagram: "https://instagram.com/bratt._rex",
-    email: "mailto:mershivam02@gmail.com"
+  site: "https://shivammer.me",
+  github: "https://github.com/ShivamSinghMer",
+  twitter: "https://twitter.com/Shivamsinghmer",
+  linkedin: "https://www.linkedin.com/in/shivam-singh-mer02112006",
+  instagram: "https://instagram.com/bratt._rex",
+  email: "mailto:mershivam02@gmail.com"
 };
