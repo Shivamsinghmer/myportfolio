@@ -76,4 +76,4 @@ The portfolio follows a **"Polished & Minimal"** aesthetic:
 
 ---
 
-Built with ❤️ by [Shivam Singh Mer](https://github.com/Shivamsinghmer)
+Built with ❤️ by [Shivam Singh Mer](https://github.com/Shivamsinghmer).
