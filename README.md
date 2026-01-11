@@ -1,64 +1,79 @@
-<img width="1905" height="844" alt="image" src="https://github.com/user-attachments/assets/c9336f2c-c281-4f50-9f9a-bb59bee804ca" /># Personal Portfolio Website
+# [Shivam Singh Mer](https://github.com/Shivamsinghmer) — Full Stack Developer
 
-A minimal, high-performance personal portfolio website designed to showcase my projects, writing, and technical skills. Built with a focus on clean UI/UX, smooth animations, and accessibility.
+A high-performance, aesthetically driven personal portfolio built with the latest web technologies. This project showcases my engineering journey, selected works, and live open-source contributions with a focus on premium user experience and motion design.
 
-🔗 **Live Demo:** [tushaar.me](https://tushaar.me)
+---
+
+## 🚀 Tech Stack
+
+- **Core**: [Next.js 16 (App Router)](https://nextjs.org/), [React 19](https://react.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/), [GSAP](https://gsap.com/)
+- **Scroll Engine**: [Lenis](https://lenis.darkroom.engineering/) for smooth cinematic scrolling.
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Components**: Radix UI, Custom Glassmorphic components.
+- **Language**: JavaScript
 
 ## ✨ Key Features
 
-* **⚡ Modern Stack:** Built with React and Tailwind CSS for speed and maintainability.
-* **🔍 Command Palette:** Fully functional `Cmd+K` / `Ctrl+K` search modal for quick navigation and actions (accessible via keyboard shortcuts).
-* **🎨 Minimalist Design:** Clean aesthetic with a focus on typography and whitespace.
-* **animate:** Smooth page transitions and component animations using **Framer Motion**.
-* **📱 Fully Responsive:** Optimized for all devices, from large desktops to mobile phones.
+- **Premium UI/UX**: A dark-themed, glassmorphic design language inspired by modern luxury SaaS platforms and minimalist aesthetics.
+- **Micro-interactions**: Subtle, fluid animations and hover effects using Framer Motion and GSAP.
+- **Smooth Scrolling**: Implemented with Lenis for a refined, cinematic browsing experience.
+- **Dynamic Content**: Live fetching of GitHub contribution data and real-time clock integration.
+- **Interactive Tech Stack**: A visually engaging showcase of technical proficiencies including TypeScript, Next.js, and GSAP.
+- **Verified Presence**: Integrated verified badges and tooltips for a professional touch.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewports.
+- **Accessibility**: Semantic HTML and ARIA-compliant components.
 
-## 🛠️ Tech Stack
+## 🛠️ Project Structure
 
-* **Framework:** [React](https://react.dev/) (Vite)
-* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-* **Animations:** [Motion]([https://www.framer.com/motion/](https://motion.dev/))
-* **Icons:** [Lucide React](https://lucide.dev/)
-* **Routing:** React Router DOM
+```bash
+src/
+├── app/            # Next.js App Router (Pages, Layout, Providers)
+├── components/     # Reusable UI & Feature-specific components
+│   ├── features/   # Business logic components (Header, Projects, GitHub, Contact)
+│   ├── layout/     # Structural components (Navbar, Footer, ClientLayout)
+│   ├── ui/         # Atomic UI components and background effects (Plum, SmoothScroll)
+│   └── icons/      # Custom SVG icons
+├── context/        # React Context (Theme, State Management)
+├── data/           # Static data (Project details, Experience)
+└── lib/            # Utility functions and shared logic
+```
 
-## 🚀 Getting Started
+## 🎨 Design Philosophy
 
-Follow these steps to set up the project locally on your machine.
+The portfolio follows a **"Polished & Minimal"** aesthetic:
+- **Glassmorphism**: Extensive use of `backdrop-blur`, subtle borders, and low-opacity backgrounds to create depth.
+- **Typography**: A harmonious blend of **Instrument Serif** (for an elegant, editorial feel) and **Inter/Outfit** (for technical clarity).
+- **Motion**: Every element enters the viewport with purpose, utilizing staggered children animations, spring physics, and blur-to-clear transitions.
+- **Background**: Features a generative "Plum" background effect and a fixed noise overlay for a tactile, premium texture.
+
+## 🏁 Getting Started
 
 ### Prerequisites
 
-* Node.js (v18 or higher)
-* npm or yarn
+- Node.js (Latest LTS recommended)
+- npm or yarn
 
 ### Installation
 
-1.  **Clone the repository**
-    ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
-    ```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shivamsinghmer/myportfolio.git
+   ```
 
-2.  **Install dependencies**
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-3.  **Start the development server**
-    ```bash
-    npm run dev
-    ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-4.  Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📂 Project Structure
+---
 
-```text
-src/
-├── components/       # Reusable UI components (SearchModal, Layout, etc.)
-├── context/          # React Contexts (Theme, Global state)
-├── data/             # Static data files (portfolioData.js, etc.)
-├── pages/            # Page components (Home, Projects, About)
-├── styles/           # Global styles and Tailwind directives
-├── App.jsx           # Main application entry point
-└── main.jsx          # DOM renderer
+Built with ❤️ by [Shivam Singh Mer](https://github.com/Shivamsinghmer)
