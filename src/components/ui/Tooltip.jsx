@@ -60,8 +60,8 @@ const Tooltip = ({ text, content, underline = true, children }) => {
                         {/* Solid Arrow - Centered Bottom */}
                         <div
                             className={`absolute w-3 h-3 rotate-45 transform bg-zinc-900 dark:bg-white border border-transparent dark:border-white/10 z-0 left-1/2 -translate-x-1/2 ${position === 'top'
-                                ? '-bottom-[5px] border-t-0 border-l-0' // Arrow points down
-                                : '-top-[5px] border-b-0 border-r-0'   // Arrow points up
+                                ? '-bottom-1.25 border-t-0 border-l-0' // Arrow points down
+                                : '-top-1.25 border-b-0 border-r-0'   // Arrow points up
                                 }`}
                         />
                     </motion.div>
@@ -71,4 +71,4 @@ const Tooltip = ({ text, content, underline = true, children }) => {
     );
 };
 
-export default Toolti
+export default Tooltip;

@@ -67,7 +67,7 @@ const Tooltip = ({ text, content, underline = true, children })=>{
         }
         setIsVisible(true);
     };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
         ref: triggerRef,
         className: "relative inline-flex group",
         onMouseEnter: handleMouseEnter,
@@ -128,8 +128,8 @@ const Tooltip = ({ text, content, underline = true, children })=>{
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: `absolute w-3 h-3 rotate-45 transform bg-zinc-900 dark:bg-white border border-transparent dark:border-white/10 z-0 left-1/2 -translate-x-1/2 ${position === 'top' ? '-bottom-[5px] border-t-0 border-l-0' // Arrow points down
-                             : '-top-[5px] border-b-0 border-r-0' // Arrow points up
+                            className: `absolute w-3 h-3 rotate-45 transform bg-zinc-900 dark:bg-white border border-transparent dark:border-white/10 z-0 left-1/2 -translate-x-1/2 ${position === 'top' ? '-bottom-1.25 border-t-0 border-l-0' // Arrow points down
+                             : '-top-1.25 border-b-0 border-r-0' // Arrow points up
                             }`
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/Tooltip.jsx",
@@ -625,7 +625,7 @@ const Header = ()=>{
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "space-y-6",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "text-lg md:text-xl text-zinc-600 dark:text-zinc-400 font-inter font-light leading-relaxed tracking-tight",
                                         children: [
                                             "Currently a ",
