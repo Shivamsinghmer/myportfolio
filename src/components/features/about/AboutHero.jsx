@@ -13,7 +13,7 @@ const AboutHero = () => {
 
     const stats = [
         { label: 'Base', value: 'Kanpur, India', icon: '📍' },
-        { label: 'Crafting Since', value: '2022', icon: '⚡' },
+        { label: 'Crafting Since', value: '2024', icon: '⚡' },
         { label: 'Availability', value: 'Global / Freelance', icon: '🟢' },
     ];
 
