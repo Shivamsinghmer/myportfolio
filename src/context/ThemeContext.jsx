@@ -13,7 +13,7 @@ export const ThemeProvider = ({ children }) => {
                 return savedTheme;
             }
         }
-        return 'light';
+        return 'dark';
     });
 
     useEffect(() => {

@@ -28,7 +28,7 @@ const page = () => {
     }
   };
   return (
-    <motion.div
+    <motion.main
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -52,7 +52,7 @@ const page = () => {
 
 
 
-    </motion.div>
+    </motion.main>
   )
 }
 

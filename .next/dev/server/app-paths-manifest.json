@@ -1,5 +1,7 @@
 {
   "/about/page": "app/about/page.js",
   "/api/github/route": "app/api/github/route.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/projects/page": "app/projects/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js"
 }

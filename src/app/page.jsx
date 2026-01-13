@@ -32,7 +32,7 @@ export default function Home() {
     };
 
     return (
-        <motion.div
+        <motion.main
             initial="hidden"
             animate="visible"
             variants={containerVariants}
@@ -59,6 +59,6 @@ export default function Home() {
             <motion.div variants={itemVariants}>
                 <TechStack />
             </motion.div>
-        </motion.div>
+        </motion.main>
     );
 }
