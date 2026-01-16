@@ -31,6 +31,19 @@ const ClientLayout = ({ children }) => {
         <>
             <SmoothScroll />
             <div className="noise-bg-fixed" />
+
+            {/* Global Fixed Background Image */}
+            <div className="fixed inset-0 z-0 pointer-events-none">
+                <img
+                    src="/about-bg.jpg"
+                    alt="Background"
+                    className="w-full h-full object-cover opacity-100"
+                />
+                {/* Lighter overlay for visibility */}
+                <div className="absolute inset-0 bg-white/40 dark:bg-zinc-950/60 backdrop-blur-[2px]" />
+                <div className="absolute inset-0 bg-linear-to-b from-transparent to-white dark:to-zinc-950 opacity-80" />
+            </div>
+
             <div className="relative z-50">
                 <Navbar />
             </div>

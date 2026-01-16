@@ -204,7 +204,7 @@ function AnimatedTextSlider({ texts = [
         interval
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: `relative h-[1.2em] w-full overflow-hidden ${className}`,
+        className: `relative h-[1.5em] w-full overflow-hidden ${className}`,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
             mode: "wait",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -334,12 +334,12 @@ const Header = ()=>{
         className: "relative mb-20",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-64 rounded-4xl overflow-hidden relative border border-black/5 dark:border-white/5 bg-gray-50 dark:bg-white/2 transition-all duration-500 group",
+                className: "w-full h-64 rounded-4xl overflow-hidden relative border border-black/5 dark:border-white/10 bg-black transition-all duration-500 group",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                        src: "https://i.pinimg.com/originals/51/2f/c3/512fc362a4ca2663778db016c2b7f703.gif",
+                        src: "https://i.pinimg.com/1200x/5b/e9/1d/5be91d87451f9b92e8829dacf3a0565d.jpg",
                         alt: "Profile Banner",
-                        className: "w-full h-full object-cover object-center opacity-85 group-hover:opacity-100 transition-opacity duration-700"
+                        className: "absolute top-1/2 left-1/2  md:w-100 w-64  -translate-y-1/2 -translate-x-1/2 rotate-270 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                     }, void 0, false, {
                         fileName: "[project]/src/components/features/header/Header.jsx",
                         lineNumber: 51,
@@ -2159,45 +2159,36 @@ const Projects = ()=>{
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "text-center relative pointer-events-none select-none overflow-hidden py-10 opacity-50",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        initial: {
-                            opacity: 0,
-                            y: 30
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true
-                        },
-                        transition: {
-                            duration: 1,
-                            ease: "easeOut"
-                        },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$ShimmeringText$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ShimmeringText"], {
-                            text: "More in development...",
-                            className: "text-[10vw] md:text-[4vw] font-instrument italic leading-tight pb-1 tracking-tighter"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/features/projects/Projects.jsx",
-                            lineNumber: 69,
-                            columnNumber: 21
-                        }, ("TURBOPACK compile-time value", void 0))
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                    initial: {
+                        opacity: 0,
+                        y: 30
+                    },
+                    whileInView: {
+                        opacity: 1,
+                        y: 0
+                    },
+                    viewport: {
+                        once: true
+                    },
+                    transition: {
+                        duration: 1,
+                        ease: "easeOut"
+                    },
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$ShimmeringText$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ShimmeringText"], {
+                        text: "More in development...",
+                        className: "text-[10vw] md:text-[4vw] font-instrument italic leading-tight pb-1 tracking-tighter"
                     }, void 0, false, {
                         fileName: "[project]/src/components/features/projects/Projects.jsx",
-                        lineNumber: 63,
-                        columnNumber: 17
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-zinc-50/80 dark:from-[#09090b]/80 to-transparent"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/features/projects/Projects.jsx",
-                        lineNumber: 74,
-                        columnNumber: 17
+                        lineNumber: 69,
+                        columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
-                ]
-            }, void 0, true, {
+                }, void 0, false, {
+                    fileName: "[project]/src/components/features/projects/Projects.jsx",
+                    lineNumber: 63,
+                    columnNumber: 17
+                }, ("TURBOPACK compile-time value", void 0))
+            }, void 0, false, {
                 fileName: "[project]/src/components/features/projects/Projects.jsx",
                 lineNumber: 62,
                 columnNumber: 13
@@ -2258,7 +2249,7 @@ const Experience = ()=>{
                 }
             }
         },
-        className: "max-w-3xl mx-auto",
+        className: "max-w-4xl mx-auto",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                 initial: {

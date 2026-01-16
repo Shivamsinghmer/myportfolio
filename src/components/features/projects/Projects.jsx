@@ -71,8 +71,7 @@ const Projects = () => {
                         className="text-[10vw] md:text-[4vw] font-instrument italic leading-tight pb-1 tracking-tighter"
                     />
                 </motion.div>
-                <div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-zinc-50/80 dark:from-[#09090b]/80 to-transparent" />
-            </div>
+                </div>
         </section>
     );
 };

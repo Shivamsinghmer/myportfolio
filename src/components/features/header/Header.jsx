@@ -47,11 +47,11 @@ const Header = () => {
             className="relative mb-20"
         >
             {/* Banner Image */}
-            <div className="w-full h-64 rounded-4xl overflow-hidden relative border border-black/5 dark:border-white/5 bg-gray-50 dark:bg-white/2 transition-all duration-500 group">
+            <div className="w-full h-64 rounded-4xl overflow-hidden relative border border-black/5 dark:border-white/10 bg-black transition-all duration-500 group">
                 <img
-                    src="https://i.pinimg.com/originals/51/2f/c3/512fc362a4ca2663778db016c2b7f703.gif"
+                    src="https://i.pinimg.com/1200x/5b/e9/1d/5be91d87451f9b92e8829dacf3a0565d.jpg"
                     alt="Profile Banner"
-                    className="w-full h-full object-cover object-center opacity-85 group-hover:opacity-100 transition-opacity duration-700"
+                    className="absolute top-1/2 left-1/2  md:w-100 w-64  -translate-y-1/2 -translate-x-1/2 rotate-270 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-zinc-100/40 via-transparent to-transparent dark:from-black/40" />
             </div>

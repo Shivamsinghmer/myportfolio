@@ -11,7 +11,7 @@ import BeyondCode from '../../components/features/about/BeyondCode';
 const page = () => {
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20, filter: 'blur(10px)' },
+    hidden: { opacity: 0, y: 30, filter: 'blur(10px)' },
     visible: {
       opacity: 1,
       y: 0,
@@ -24,15 +24,16 @@ const page = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.3 }
+      transition: { staggerChildren: 0.2 }
     }
   };
+
   return (
     <motion.main
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="space-y-20 max-w-3xl mx-auto"
+      className="space-y-24 max-w-4xl mx-auto"
     >
       <motion.div variants={itemVariants}>
         <AboutHero />
@@ -49,9 +50,6 @@ const page = () => {
       <motion.div variants={itemVariants}>
         <BeyondCode />
       </motion.div>
-
-
-
     </motion.main>
   )
 }

@@ -214,7 +214,7 @@ export const techStack = [
   { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", url: "https://www.mongodb.com" },
   { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", url: "https://www.figma.com" },
   { name: "OpenAI", icon: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg", url: "https://openai.com", invertDark: true },
-  { name: "NeonDB", icon: "https://neon.com/_next/static/svgs/9ec344e46390fe939d46984bf9cecaa7.svg", darkIcon: "https://neon.com/_next/static/svgs/6da928883916f39a4848774319dcaf81.svg", url: "https://neon.tech" },
+  { name: "NeonDB", icon: "https://images.seeklogo.com/logo-png/48/1/neon-icon-logo-png_seeklogo-482127.png", darkIcon: "https://images.seeklogo.com/logo-png/48/1/neon-icon-logo-png_seeklogo-482127.png", url: "https://neon.tech" },
   { name: "Gemini API", icon: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg", url: "https://deepmind.google/technologies/gemini/" },
   { name: "Motion React", icon: "https://cdn.worldvectorlogo.com/logos/framer-motion.svg", url: "https://motion.dev/" },
   { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", url: "https://expressjs.com", invertDark: true },

@@ -17,7 +17,7 @@ export function AnimatedTextSlider({
   }, [texts.length, interval]);
 
   return (
-    <div className={`relative h-[1.2em] w-full overflow-hidden ${className}`}>
+    <div className={`relative h-[1.5em] w-full overflow-hidden ${className}`}>
       <AnimatePresence mode="wait">
         <motion.div
           key={index}
