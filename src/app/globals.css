@@ -195,58 +195,52 @@ button,
   z-index: 1;
 }
 
-/* Custom Premium Scrollbar */
-.custom-scrollbar::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+/* Custom Premium Scrollbar - Global Application */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
   background: transparent;
 }
 
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.05);
-  /* Subtle track */
-  border-radius: 10px;
-  margin: 0 4px;
-  /* Margin on sides */
+::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 4px;
 }
 
-:root.dark .custom-scrollbar::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
-  /* Softer track for dark mode */
+:root.dark ::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #a1a1aa;
-  /* Zinc 400 */
+::-webkit-scrollbar-thumb {
+  background: rgba(161, 161, 170, 0.4); /* Zinc 400 with opacity */
   border-radius: 10px;
-  border: 2px solid transparent;
-  background-clip: padding-box;
-  /* Ensures border acts as padding/gap */
+  backdrop-filter: blur(4px);
   transition: background 0.3s ease;
 }
 
-:root.dark .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #52525b;
-  /* Zinc 600 */
-  border: 2px solid transparent;
-  background-clip: padding-box;
+:root.dark ::-webkit-scrollbar-thumb {
+  background: rgba(82, 82, 91, 0.4); /* Zinc 600 with opacity */
 }
 
-.custom-scrollbar:hover::-webkit-scrollbar-thumb {
-  background: #71717a;
-  /* Zinc 500 */
-  background-clip: padding-box;
-  border: 2px solid transparent;
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(113, 113, 122, 0.8); /* Zinc 500 */
 }
 
-:root.dark .custom-scrollbar:hover::-webkit-scrollbar-thumb {
-  background: #71717a;
-  /* Zinc 500 */
-  background-clip: padding-box;
-  border: 2px solid transparent;
+:root.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(161, 161, 170, 0.8); /* Zinc 400 */
 }
 
 /* Hide scrollbar buttons */
-.custom-scrollbar::-webkit-scrollbar-button {
+::-webkit-scrollbar-button {
   display: none;
+}
+
+/* Firefox support (limited) */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(161, 161, 170, 0.4) transparent;
+}
+
+:root.dark html {
+  scrollbar-color: rgba(82, 82, 91, 0.4) transparent;
 }
