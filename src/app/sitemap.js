@@ -1,5 +1,5 @@
 export default function sitemap() {
-    const baseUrl = 'https://shivammer.vercel.app'; // Replace with actual domain
+    const baseUrl = 'https://shivammer.me'; // Replace with actual domain
 
     // Get current date for lastModified
     const lastModified = new Date();

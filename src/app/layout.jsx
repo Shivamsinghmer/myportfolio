@@ -5,7 +5,7 @@ import ClientLayout from '../components/layout/ClientLayout';
 import { inter, instrumentSerif, playfairDisplay } from './fonts';
 
 export const metadata = {
-    metadataBase: new URL('https://shivammer.vercel.app'), // Replace with actual domain
+    metadataBase: new URL('https://shivammer.me'), // Replace with actual domain
     title: {
         default: 'Shivam Singh Mer — Full Stack Developer',
         template: '%s | Shivam Singh Mer'
@@ -17,7 +17,7 @@ export const metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://shivammer.vercel.app',
+        url: 'https://shivammer.me',
         title: 'Shivam Singh Mer — Full Stack Developer',
         description: 'I build accessible, pixel-perfect web experiences. Explore my projects and engineering journey.',
         siteName: 'Shivam Singh Mer',

@@ -5,6 +5,6 @@ export default function robots() {
             allow: '/',
             disallow: ['/api/'],
         },
-        sitemap: 'https://shivammer.vercel.app/sitemap.xml',
+        sitemap: 'https://shivammer.me/sitemap.xml',
     };
 }
