@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'motion/react';
 import Navbar from './Navbar/Navbar';
 import SmoothScroll from '../ui/SmoothScroll';
@@ -31,12 +32,18 @@ const ClientLayout = ({ children }) => {
             <SmoothScroll />
             <div className="noise-bg-fixed" />
 
-            {/* Global Fixed Background Image */}
+            {/* Global Fixed Background Image - Optimized */}
             <div className="fixed inset-0 z-0 pointer-events-none">
-                <img
+                <Image
                     src="/about-bg.jpg"
-                    alt="Background"
-                    className="w-full h-full object-cover opacity-100"
+                    alt=""
+                    fill
+                    priority
+                    quality={75}
+                    sizes="100vw"
+                    className="object-cover opacity-100"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCwAB//2Q=="
                 />
                 {/* Lighter overlay for visibility */}
                 <div className="absolute inset-0 bg-white/40 dark:bg-zinc-950/60 backdrop-blur-[2px]" />

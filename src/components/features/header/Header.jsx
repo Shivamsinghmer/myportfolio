@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { motion } from 'motion/react';
 import { MapPin, Building2, ExternalLink, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../../../context/ThemeContext';
@@ -41,17 +42,21 @@ const Header = () => {
     return (
         <motion.section
             variants={{
-                hidden: { opacity: 0, y: 40, filter: 'blur(10px)' },
-                visible: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.5, ease: "easeOut" } }
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } }
             }}
             className="relative mb-20"
         >
-            {/* Banner Image */}
+            {/* Banner Image - Optimized */}
             <div className="w-full h-64 rounded-4xl overflow-hidden relative border border-black/5 dark:border-white/10 bg-black transition-all duration-500 group">
-                <img
+                <Image
                     src="https://i.pinimg.com/1200x/81/d7/70/81d77056397cb93847c27be30ab26d6e.jpg"
-                    alt="Profile Banner"
-                    className="absolute top-1/2 left-1/2  w-full      -translate-y-1/2 -translate-x-1/2 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                    alt=""
+                    fill
+                    priority
+                    quality={80}
+                    sizes="(max-width: 768px) 100vw, 1200px"
+                    className="object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-zinc-100/40 via-transparent to-transparent dark:from-black/40" />
             </div>
@@ -59,16 +64,20 @@ const Header = () => {
             {/* Profile Info & Badge Overlay */}
             <div className="relative -mt-24 px-2 flex flex-col items-start translate-z-10">
                 <div className="flex flex-col sm:flex-row sm:items-end justify-between w-full gap-6">
-                    {/* Profile Picture */}
+                    {/* Profile Picture - Optimized */}
                     <motion.div
                         initial={{ scale: 0.9, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.5, type: "spring", stiffness: 200 }}
                         className="w-36 h-36 md:w-44 md:h-44 rounded-full border-[6px] border-[#FDFCF8] dark:border-[#09090b] shadow-2xl overflow-hidden bg-white dark:bg-zinc-900 relative z-10 ring-1 ring-black/5 dark:ring-white/10"
                     >
-                        <img
-                            src="Profile.jpg"
+                        <Image
+                            src="/Profile.jpg"
                             alt="Shivam Singh Mer"
+                            width={176}
+                            height={176}
+                            priority
+                            quality={90}
                             className="w-full h-full object-cover"
                         />
                     </motion.div>

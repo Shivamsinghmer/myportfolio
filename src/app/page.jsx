@@ -1,33 +1,56 @@
 'use client';
 
 import React from 'react';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 
 // --- Components ---
 import Header from '../components/features/header/Header';
-import GitHubSection from '../components/features/github/GitHubSection';
-import Projects from '../components/features/projects/Projects';
-import Experience from '../components/features/experience/Experience';
-import TechStack from '../components/features/home/TechStack';
+
+// Dynamically import ALL heavy components to reduce initial bundle
+const GitHubSection = dynamic(() => import('../components/features/github/GitHubSection'), {
+    ssr: false,
+    loading: () => (
+        <div className="flex items-center justify-center min-h-100">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900 dark:border-gray-100" />
+        </div>
+    )
+});
+
+const Projects = dynamic(() => import('../components/features/projects/Projects'), {
+    ssr: false,
+    loading: () => (
+        <div className="flex items-center justify-center min-h-100">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900 dark:border-gray-100" />
+        </div>
+    )
+});
+
+const Experience = dynamic(() => import('../components/features/experience/Experience'), {
+    ssr: false,
+});
+
+const TechStack = dynamic(() => import('../components/features/home/TechStack'), {
+    ssr: false,
+});
 
 // --- Home Page ---
 export default function Home() {
-    // Variants
+    // Optimized Variants for better performance
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
-            transition: { staggerChildren: 0.3 }
+            transition: { staggerChildren: 0.2 }
         }
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 20, filter: 'blur(10px)' },
+        hidden: { opacity: 0, y: 15 },
         visible: {
             opacity: 1,
             y: 0,
-            filter: 'blur(0px)',
-            transition: { duration: 0.8, ease: "easeOut" }
+            transition: { duration: 0.6, ease: "easeOut" }
         }
     };
 

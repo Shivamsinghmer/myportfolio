@@ -20,6 +20,8 @@ const QuoteSection = () => {
                     loop
                     muted
                     playsInline
+                    loading="lazy"
+                    preload="none"
                     className="w-full h-full object-cover opacity-60 md:opacity-60 dark:opacity-40 dark:md:opacity-40 grayscale"
                 >
                     <source src={typeof quoteVideo === 'string' ? quoteVideo : quoteVideo.src} type="video/mp4" />

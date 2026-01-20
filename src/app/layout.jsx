@@ -2,6 +2,7 @@ import Script from 'next/script';
 import './globals.css';
 import { Providers } from './providers';
 import ClientLayout from '../components/layout/ClientLayout';
+import { inter, instrumentSerif, playfairDisplay } from './fonts';
 
 export const metadata = {
     metadataBase: new URL('https://shivammer.vercel.app'), // Replace with actual domain
@@ -54,8 +55,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html
+            lang="en"
+            suppressHydrationWarning
+            className={`${inter.variable} ${instrumentSerif.variable} ${playfairDisplay.variable}`}
+        >
             <head>
+                {/* DNS Prefetch for external resources */}
+                <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+                <link rel="dns-prefetch" href="https://i.pinimg.com" />
+
                 <script
                     dangerouslySetInnerHTML={{
                         __html: `
@@ -75,9 +84,9 @@ export default function RootLayout({ children }) {
                 <Script
                     async
                     src="https://www.googletagmanager.com/gtag/js?id=G-92FT4Y8L8T"
-                    strategy="afterInteractive"
+                    strategy="lazyOnload"
                 />
-                <Script id="google-analytics" strategy="afterInteractive">
+                <Script id="google-analytics" strategy="lazyOnload">
                     {`
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}

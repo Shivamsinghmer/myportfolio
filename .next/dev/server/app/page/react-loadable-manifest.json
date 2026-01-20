@@ -1,1 +1,30 @@
-{}
+{
+  "[project]/src/components/features/github/GitHubSection.jsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/features/github/GitHubSection.jsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_a0af4f8f._.js",
+      "static/chunks/src_components_features_github_GitHubSection_jsx_4a3badb2._.js"
+    ]
+  },
+  "[project]/src/components/features/projects/Projects.jsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/features/projects/Projects.jsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_21645e59._.js",
+      "static/chunks/src_components_features_projects_Projects_jsx_4a3badb2._.js"
+    ]
+  },
+  "[project]/src/components/features/experience/Experience.jsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/features/experience/Experience.jsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/src_components_features_experience_Experience_jsx_3d9d3600._.js",
+      "static/chunks/src_components_features_experience_Experience_jsx_4a3badb2._.js"
+    ]
+  },
+  "[project]/src/components/features/home/TechStack.jsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/features/home/TechStack.jsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_44ae2170._.js",
+      "static/chunks/src_components_features_home_TechStack_jsx_4a3badb2._.js"
+    ]
+  }
+}
