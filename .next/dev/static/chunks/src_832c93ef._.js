@@ -337,9 +337,9 @@ const Header = ()=>{
                 className: "w-full h-64 rounded-4xl overflow-hidden relative border border-black/5 dark:border-white/10 bg-black transition-all duration-500 group",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                        src: "https://i.pinimg.com/1200x/5b/e9/1d/5be91d87451f9b92e8829dacf3a0565d.jpg",
+                        src: "https://i.pinimg.com/1200x/81/d7/70/81d77056397cb93847c27be30ab26d6e.jpg",
                         alt: "Profile Banner",
-                        className: "absolute top-1/2 left-1/2  md:w-100 w-64  -translate-y-1/2 -translate-x-1/2 rotate-270 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                        className: "absolute top-1/2 left-1/2  w-full      -translate-y-1/2 -translate-x-1/2 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                     }, void 0, false, {
                         fileName: "[project]/src/components/features/header/Header.jsx",
                         lineNumber: 51,

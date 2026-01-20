@@ -3,7 +3,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import Navbar from './Navbar/Navbar';
-import Plum from '../ui/background/Plum';
 import SmoothScroll from '../ui/SmoothScroll';
 import Contact from '../features/contact/Contact';
 import Footer from './Footer/Footer';
@@ -47,7 +46,6 @@ const ClientLayout = ({ children }) => {
             <div className="relative z-50">
                 <Navbar />
             </div>
-            <Plum />
             <div className="min-h-screen text-gray-600 dark:text-gray-400 font-inter selection:bg-gray-900 selection:text-white pb-8">
                 <main className="max-w-7xl mx-auto px-4 sm:px-6 pt-24 relative z-10 w-full">
                     <motion.div
