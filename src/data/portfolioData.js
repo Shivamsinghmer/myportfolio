@@ -7,9 +7,8 @@ import xora from "../assets/zora.png"
 import apple from "../assets/apple.png"
 import solanawallet from "../assets/Solana Wallet Services.jpg"
 import securechat from "../assets/securechat.png"
-import walletadapter from "../assets/wallet-adapter.png"
-import basesepoliafaucet from "../assets/BaseSepoliaFaucet.png"
 import twitterdapp from "../assets/twitterdapp.png"
+import orcstake from "../assets/orcstake.png"
 
 export const roles = [
   {
@@ -91,6 +90,20 @@ export const projects = [
     github: "https://github.com/Shivamsinghmer/Portfolio-main"
   },
 
+
+  {
+    id: "OrcStake",
+    title: "OrcStake",
+    role: "Full Stack Web3 Developer",
+    description: "Real-time private chat application using WebSockets.",
+    stack: ["Next.js", "Tailwind CSS", "Wagmi", "Viem", "Ethereum", "Node.js", "Vercel", "GSAP", "Motion React"],
+    gradient: "from-zinc-600 to-stone-600",
+    bgColor: "#111111",
+    img: orcstake,
+    live: "https://orcstake.vercel.app/",
+    github: "https://github.com/Shivamsinghmer/erc20-staking-contract-frontend"
+  },
+
   {
     id: "SecureChat",
     title: "SecureChat",
@@ -148,7 +161,7 @@ export const projects = [
     title: "Solana Wallet Services",
     role: "Full Stack Web3 Developer",
     description: "Web-based utility services for Solana wallets.",
-    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel", "GSAP"],
+    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel", "GSAP", "Solana"],
     gradient: "from-zinc-600 to-stone-600",
     bgColor: "#301934",
     img: solanawallet,
@@ -161,39 +174,13 @@ export const projects = [
     title: "Twitter Dapp",
     role: "Full Stack Web3 Developer",
     description: "Decentralized Twitter-like social media application.",
-    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel", "GSAP"],
+    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel", "GSAP", "Ethereum"],
     gradient: "from-zinc-600 to-stone-600",
     bgColor: "#002137",
     img: twitterdapp,
     live: "https://twitterdapp.netlify.app/",
     github: "https://github.com/Shivamsinghmer/Twitter-Dapp"
   },
-
-  {
-    id: "Solana Wallet Adapter",
-    title: "Solana Wallet Adapter",
-    role: "Full Stack Web3 Developer",
-    description: "Wallet connection and transaction signing using Solana.",
-    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel", "GSAP"],
-    gradient: "from-zinc-600 to-stone-600",
-    bgColor: "#6A5ACD",
-    img: walletadapter,
-    live: "https://solanawalletadapter.netlify.app/",
-    github: "https://github.com/Shivamsinghmer/solanaWalletAdapter"
-  },
-
-  {
-    id: "Base Sepolia Faucet Web3",
-    title: "Base Sepolia Faucet Web3",
-    role: "Full Stack Web3 Developer",
-    description: "Testnet faucet application for Base Sepolia network.",
-    stack: ["React", "Web3.js", "Tailwind CSS", "Vercel", "GSAP"],
-    gradient: "from-zinc-600 to-stone-600",
-    bgColor: "#002137",
-    img: basesepoliafaucet,
-    live: "https://base-sepolia-faucet-web-pgxu.vercel.app/",
-    github: "https://github.com/Shivamsinghmer/BaseSepoliaFaucetWeb"
-  }
 ];
 
 
@@ -226,6 +213,10 @@ export const techStack = [
   { name: "GSAP", icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg", url: "http://gsap.com/" },
   { name: "Web3.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/web3js/web3js-original.svg", url: "https://web3js.org" },
   { name: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg", url: "https://vercel.com", invertDark: true },
+  { name: "Solana", icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png", url: "https://solana.com" },
+  { name: "Wagmi", icon: "https://res.cloudinary.com/alchemy-website/image/upload/v1694675444/dapp-store/dapp-logos/Wagmi.png", url: "https://wagmi.sh" },
+  { name: "Viem", icon: "https://viem.sh/icon-dark.png", url: "https://viem.sh"},
+  { name: "Ethereum", icon: "https://ethereum.org/favicon.ico", url: "https://ethereum.org" },
 ];
 
 export const socialLinks = {
