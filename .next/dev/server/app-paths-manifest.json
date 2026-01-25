@@ -1,5 +1,0 @@
-{
-  "/api/github/route": "app/api/github/route.js",
-  "/page": "app/page.js",
-  "/robots.txt/route": "app/robots.txt/route.js"
-}
