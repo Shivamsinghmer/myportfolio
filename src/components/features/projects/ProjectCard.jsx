@@ -43,7 +43,7 @@ const ProjectCard = ({ project, index }) => {
                             <img
                                 src={typeof project.img === 'string' ? project.img : project.img.src}
                                 alt={project.title}
-                                className="w-full h-full object-cover object-top transition-all duration-1000 group-hover:scale-110"
+                                className="w-full h-full object-contain transition-all duration-1000 group-hover:scale-[1.02]"
                             />
                         ) : (
                             <div className="w-full h-full flex items-center justify-center bg-linear-to-br from-zinc-50 to-zinc-200 dark:from-zinc-800 dark:to-zinc-900">

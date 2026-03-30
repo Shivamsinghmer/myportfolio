@@ -3,10 +3,9 @@
 import React, { useEffect } from 'react';
 import { motion } from 'motion/react';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import ProjectCard from '../../components/features/projects/ProjectCard';
 import { projects } from '../../data/portfolioData';
-// import { ShimmeringText } from '../../src/components/ui/ShimmeringText'; // Unused in provided Projects.jsx except import
 
 export default function AllProjects() {
     const containerVariants = {
@@ -54,7 +53,7 @@ export default function AllProjects() {
                                 Portfolio Archive
                             </span>
                             <h1 className="text-5xl md:text-7xl font-instrument italic font-normal text-zinc-900 dark:text-white tracking-tight leading-[1.1]">
-                                All <span className="font-inter not-italic font-bold text-zinc-300 dark:text-zinc-600">Projects</span>
+                                All <span className="font-inter not-italic font-bold text-zinc-500 dark:text-zinc-400">Projects</span>
                             </h1>
                         </motion.div>
 
@@ -66,22 +65,6 @@ export default function AllProjects() {
                         >
                             A curated collection of shipping web applications, experiments, and digital craftsmanship.
                         </motion.p>
-                    </div>
-
-                    {/* Metadata / Counter */}
-                    <div className="hidden md:block text-right">
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.2, duration: 0.7 }}
-                        >
-                            <span className="block text-[10px] font-mono tracking-widest text-zinc-400 uppercase mb-2">
-                                Total Works
-                            </span>
-                            <span className="text-6xl font-instrument italic text-zinc-200 dark:text-zinc-800">
-                                {projects.length.toString().padStart(2, '0')}
-                            </span>
-                        </motion.div>
                     </div>
                 </div>
 
@@ -97,6 +80,24 @@ export default function AllProjects() {
                             <ProjectCard project={project} index={index} />
                         </motion.div>
                     ))}
+                </motion.div>
+
+                {/* See More Projects Button */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5, duration: 0.6 }}
+                    className="flex justify-center mt-16 pb-16"
+                >
+                    <Link
+                        href="https://github.com/Shivamsinghmer?tab=repositories"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-center gap-3 px-8 py-4 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-full font-medium text-sm tracking-wide hover:bg-zinc-700 dark:hover:bg-zinc-100 transition-all duration-300 hover:scale-105"
+                    >
+                        See More Projects
+                        <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
+                    </Link>
                 </motion.div>
 
             </div>
