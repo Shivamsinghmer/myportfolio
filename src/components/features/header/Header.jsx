@@ -145,18 +145,18 @@ const Header = () => {
 
                     <div className="space-y-6">
                         <div className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 font-inter font-light leading-relaxed tracking-tight">
-                            Currently a <span className="text-zinc-900 dark:text-zinc-200 font-medium whitespace-nowrap">Full Stack Developer</span> at{" "}
-                            <a href="https://brxlabz.vercel.app/" target="_blank" rel="noopener noreferrer" className="group/link inline-flex items-center gap-1 font-instrument italic text-zinc-950 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">
+                            Currently a <span className="text-zinc-900 dark:text-zinc-200 font-medium whitespace-nowrap">AI + Web3 Intern</span> at{" "}
+                            <a href="https://naytive.com" target="_blank" rel="noopener noreferrer" className="group/link inline-flex items-center gap-1 font-instrument italic text-zinc-950 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">
                                 <Tooltip
-                                    text="BRX Labz"
+                                    text="Onchain City"
                                     underline={true}
                                     content={
                                         <div className="flex flex-col gap-2 p-1">
                                             <div className="flex items-center gap-2 text-[#4daaf7] dark:text-[#1D9BF0] font-semibold text-xs">
                                                 <Building2 size={14} />
-                                                <span>BRX Labz</span>
+                                                <span>Onchain City</span>
                                             </div>
-                                            <p className="text-zinc-400 dark:text-zinc-500 text-[11px] leading-snug">Building modern, performance-driven websites and web applications for startups and businesses.</p>
+                                            <p className="text-zinc-400 dark:text-zinc-500 text-[11px] leading-snug">Building a blockchain-powered travel platform for visa applications and eSIM purchases.</p>
                                         </div>
                                     }
                                 />

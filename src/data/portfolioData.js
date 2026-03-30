@@ -12,12 +12,20 @@ import orcstake from "../assets/orcstake.png"
 
 export const roles = [
   {
+    company: "Onchain City",
+    role: "AI + Web3 Intern",
+    date: "March 2026 — Present",
+    logo: "OC",
+    description:
+      "Building AI agents for real-world applications — visa processing and eSIM management — as part of the core product team. Working closely with experienced engineers in a fast-moving Web3 environment.",
+  },
+  {
     company: "BRX Labz",
-    role: "Founder / Full Stack Engineer",
+    role: "Founder & Full Stack Engineer",
     date: "Nov 2025 — Present",
     logo: "BRX",
     description:
-      "Founder and developer at BRX Labz, building modern, performance-driven websites and web applications while handling projects end-to-end — from planning and design to development, optimization, and deployment.",
+      "Founded and run my own dev agency. I take projects from idea to launch — handling design, architecture, development, and deployment. Every product I ship is fast, clean, and built to last.",
   },
   {
     company: "Freelance",
@@ -25,7 +33,7 @@ export const roles = [
     date: "Jul 2024 — Oct 2025",
     logo: "FR",
     description:
-      "Freelance web developer building modern, responsive websites and web applications, managing projects end-to-end with a focus on performance, usability, and real-world impact.",
+      "Worked independently with clients across different industries, delivering responsive web apps and sites end-to-end. Sharpened my ability to move fast, communicate clearly, and solve real problems.",
   },
 ];
 
