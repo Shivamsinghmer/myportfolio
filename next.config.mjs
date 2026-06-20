@@ -34,9 +34,6 @@ const nextConfig = {
     compiler: {
         removeConsole: process.env.NODE_ENV === 'production',
     },
-
-    // Production optimizations
-    swcMinify: true,
 };
 
 export default nextConfig;

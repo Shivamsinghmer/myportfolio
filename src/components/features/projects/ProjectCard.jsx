@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import Image from 'next/image';
 // import { Link } from 'react-router-dom';
 import { Github, Globe, ArrowUpRight } from 'lucide-react';
 import { techStack } from '../../../data/portfolioData';
@@ -40,10 +41,13 @@ const ProjectCard = ({ project, index }) => {
                     {/* Project Preview */}
                     <div className="relative w-full h-full">
                         {project.img ? (
-                            <img
-                                src={typeof project.img === 'string' ? project.img : project.img.src}
+                            <Image
+                                src={project.img}
                                 alt={project.title}
-                                className="w-full h-full object-contain transition-all duration-1000 group-hover:scale-[1.02]"
+                                fill
+                                quality={75}
+                                sizes="(max-width: 768px) 90vw, 45vw"
+                                className="object-contain transition-all duration-1000 group-hover:scale-[1.02]"
                             />
                         ) : (
                             <div className="w-full h-full flex items-center justify-center bg-linear-to-br from-zinc-50 to-zinc-200 dark:from-zinc-800 dark:to-zinc-900">

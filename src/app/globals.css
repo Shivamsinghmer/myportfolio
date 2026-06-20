@@ -108,6 +108,21 @@ button,
   mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 
+@keyframes shimmer-text {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-shimmer-text {
+  animation-name: shimmer-text;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 @keyframes grow {
   0% {
     stroke-dashoffset: 1px;

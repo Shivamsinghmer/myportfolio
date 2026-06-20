@@ -59,7 +59,7 @@ const BeyondCode = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className="relative max-w-4xl"
+        className="relative max-w-4xl mx-auto"
       >
         <div className="space-y-8">
           {/* Label */}

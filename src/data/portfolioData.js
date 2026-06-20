@@ -12,12 +12,30 @@ import StockSense from "../assets/StockSense.png";
 import OpenX402 from "../assets/Openx4O2.png";
 import ExpenseIQ from "../assets/ExpenseIQ.png";
 import OnchainAgent from "../assets/Onchain.png";
+import KnorvexImg from "../assets/knorvex.png";
+import Verido from "../assets/verido.png";
 
 export const roles = [
   {
+    company: "HackingFlix",
+    role: "Full Stack Developer",
+    date: "May 2026 — Present",
+    logo: "HF",
+    description:
+      "Developing a full-stack Cybersecurity platform from scratch, featuring a CTF engine, in-browser terminal, and cloud labs for 10K+ learners.",
+  },
+  {
+    company: "Optimus Technology Consulting",
+    role: "Founding Engineer",
+    date: "March 2026 — Present",
+    logo: "HF",
+    description:
+      "Working with IIT alumni founders to build AI-powered services and Web3 based solutions, audits for the businesses.",
+  },
+  {
     company: "Onchain City",
     role: "AI + Web3 Intern",
-    date: "March 2026 — Present",
+    date: "March 2026 — April 2026",
     logo: "OC",
     description:
       "Building AI agents for real-world applications — visa processing and eSIM management — as part of the core product team. Working closely with experienced engineers in a fast-moving Web3 environment.",
@@ -29,15 +47,7 @@ export const roles = [
     logo: "BRX",
     description:
       "Founded and run my own dev agency. I take projects from idea to launch — handling design, architecture, development, and deployment. Every product I ship is fast, clean, and built to last.",
-  },
-  {
-    company: "Freelance",
-    role: "Full Stack Engineer",
-    date: "Jul 2024 — Oct 2025",
-    logo: "FR",
-    description:
-      "Worked independently with clients across different industries, delivering responsive web apps and sites end-to-end. Sharpened my ability to move fast, communicate clearly, and solve real problems.",
-  },
+  }
 ];
 
 export const studies = [
@@ -60,6 +70,49 @@ export const studies = [
 ];
 
 export const projects = [
+  {
+    id: "Knorvex",
+    title: "Knorvex",
+    role: "Full Stack Developer",
+    description:
+      "India's peer-to-peer skill exchange platform. Teach what you know, learn what you don't — powered by SkillCoins and AI matching. No money changes hands. Built for DevQBX Arena.",
+    stack: [
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.io",
+      "Groq AI",
+      "Redis",
+      "BullMQ",
+      "Cloudinary",
+    ],
+    gradient: "from-violet-500 to-indigo-600",
+    bgColor: "#0d0a1a",
+    img: KnorvexImg,
+    live: "https://knorvex-ai.vercel.app/",
+    github: "https://github.com/Shivamsinghmer/knorvex",
+  },
+  {
+    id: "Verido",
+    title: "Verido",
+    role: "Full Stack Developer",
+    description:
+      "Global, AI-powered Experience Engineering Company. We design and ship Agentic AI solutions — autonomous agents, intelligent pipelines, and AI-native products. Audit. Design. Ship. Live in 42 Days.",
+    stack: [
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Vercel",
+      "Motion React",
+    ],
+    gradient: "from-indigo-600 to-teal-500",
+    bgColor: "#0a0f1e",
+    img: Verido,
+    live: "https://verido.co",
+    github: "https://github.com/Shivamsinghmer/42works",
+  },
   {
     id: "BRX Labz",
     title: "BRX Labz",

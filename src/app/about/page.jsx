@@ -33,7 +33,7 @@ const page = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="space-y-24 max-w-4xl mx-auto"
+      className="space-y-24 max-w-6xl mx-auto"
     >
       <motion.div variants={itemVariants}>
         <AboutHero />

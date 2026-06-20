@@ -1,59 +1,29 @@
-import { motion } from "motion/react";
 import * as React from "react";
 import { cn } from "../../lib/utils";
 
+// CSS-driven shimmer (single composited background-position animation)
+// instead of one Framer Motion color animation per character running
+// on the JS thread forever — that was the source of constant CPU usage.
 export function ShimmeringText({
     text,
-    duration = 1,
+    duration = 2,
     isStopped = false,
     className,
     ...props
 }) {
-    const createCharVariants = React.useCallback(
-        (charIndex) => ({
-            running: {
-                color: ["var(--color)", "var(--shimmering-color)", "var(--color)"],
-                transition: {
-                    duration,
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    repeatDelay: text.length * 0.05,
-                    delay: (charIndex * duration) / text.length,
-                    ease: "easeInOut",
-                },
-            },
-            stopped: {
-                color: "var(--color)",
-                transition: {
-                    duration: duration * 0.5,
-                    ease: "easeOut",
-                },
-            },
-        }),
-        [duration, text.length]
-    );
-
     return (
-        <motion.span
+        <span
             className={cn(
-                "inline-block select-none",
-                "[--color:var(--color-zinc-400)] [--shimmering-color:var(--color-zinc-950)]",
-                "dark:[--color:var(--color-zinc-600)] dark:[--shimmering-color:var(--color-zinc-50)]",
+                "inline-block select-none bg-clip-text text-transparent bg-[length:200%_100%]",
+                "bg-linear-to-r from-zinc-400 via-zinc-950 to-zinc-400",
+                "dark:from-zinc-600 dark:via-zinc-50 dark:to-zinc-600",
+                !isStopped && "animate-shimmer-text",
                 className
             )}
+            style={{ animationDuration: `${duration * 2}s` }}
             {...props}
         >
-            {text?.split("")?.map((char, i) => (
-                <motion.span
-                    key={i}
-                    className="inline-block whitespace-pre"
-                    initial="stopped"
-                    animate={isStopped ? "stopped" : "running"}
-                    variants={createCharVariants(i)}
-                >
-                    {char}
-                </motion.span>
-            ))}
-        </motion.span>
+            {text}
+        </span>
     );
 }

@@ -45,8 +45,8 @@ const ClientLayout = ({ children }) => {
                     placeholder="blur"
                     blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCwAB//2Q=="
                 />
-                {/* Lighter overlay for visibility */}
-                <div className="absolute inset-0 bg-white/40 dark:bg-zinc-950/60 backdrop-blur-[2px]" />
+                {/* Lighter overlay for visibility - no backdrop-filter so it doesn't repaint on scroll */}
+                <div className="absolute inset-0 bg-white/50 dark:bg-zinc-950/70" />
                 <div className="absolute inset-0 bg-linear-to-b from-transparent to-white dark:to-zinc-950 opacity-80" />
             </div>
 

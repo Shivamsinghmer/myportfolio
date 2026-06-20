@@ -174,7 +174,7 @@ const GitHubSection = () => {
                 </motion.div>
 
                 {/* Content Card */}
-                <div className="relative p-6 md:p-10 rounded-[2.5rem] border border-black/4 dark:border-white/4 bg-white/40 dark:bg-black/20 backdrop-blur-3xl shadow-[0_32px_64px_-16px_rgba(0,0,0,0.06)] overflow-hidden group">
+                <div className="relative p-6 md:p-10 rounded-[2.5rem] border border-black/4 dark:border-white/4 bg-white/70 dark:bg-black/40 backdrop-blur-md shadow-[0_32px_64px_-16px_rgba(0,0,0,0.06)] overflow-hidden group">
                     {/* Background Glow */}
                     <div className="absolute -top-24 -right-24 w-96 h-96 bg-emerald-500/5 dark:bg-emerald-500/5 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-1000 -z-10"></div>
 

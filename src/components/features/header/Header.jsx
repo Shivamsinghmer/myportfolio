@@ -50,13 +50,13 @@ const Header = () => {
             {/* Banner Image - Optimized */}
             <div className="w-full h-64 rounded-4xl overflow-hidden relative border border-black/5 dark:border-white/10 bg-black transition-all duration-500 group">
                 <Image
-                    src="https://i.pinimg.com/1200x/81/d7/70/81d77056397cb93847c27be30ab26d6e.jpg"
+                    src="https://i.pinimg.com/736x/11/9c/11/119c118d2ecd8ec3a3d1e131e3060e4c.jpg"
                     alt=""
                     fill
                     priority
                     quality={80}
                     sizes="(max-width: 768px) 100vw, 1200px"
-                    className="object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                    className="object-cover  opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-zinc-100/40 via-transparent to-transparent dark:from-black/40" />
             </div>
@@ -145,18 +145,18 @@ const Header = () => {
 
                     <div className="space-y-6">
                         <div className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 font-inter font-light leading-relaxed tracking-tight">
-                            Currently a <span className="text-zinc-900 dark:text-zinc-200 font-medium whitespace-nowrap">AI + Web3 Intern</span> at{" "}
-                            <a href="https://naytive.com" target="_blank" rel="noopener noreferrer" className="group/link inline-flex items-center gap-1 font-instrument italic text-zinc-950 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">
+                            Currently <span className="text-zinc-900 dark:text-zinc-200 font-medium whitespace-nowrap">Full Stack Developer</span> at{" "}
+                            <a href="https://10x.gautamventure.com" target="_blank" rel="noopener noreferrer" className="group/link inline-flex items-center gap-1 font-instrument italic text-zinc-950 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">
                                 <Tooltip
-                                    text="Onchain City"
+                                    text="HackingFlix"
                                     underline={true}
                                     content={
                                         <div className="flex flex-col gap-2 p-1">
                                             <div className="flex items-center gap-2 text-[#4daaf7] dark:text-[#1D9BF0] font-semibold text-xs">
                                                 <Building2 size={14} />
-                                                <span>Onchain City</span>
+                                                <span>HackingFlix</span>
                                             </div>
-                                            <p className="text-zinc-400 dark:text-zinc-500 text-[11px] leading-snug">Building a blockchain-powered travel platform for visa applications and eSIM purchases.</p>
+                                            <p className="text-zinc-400 dark:text-zinc-500 text-[11px] leading-snug">Developing a full-stack Cybersecurity platform from scratch, featuring a CTF engine, in-browser terminal, and cloud labs for 10K+ learners.</p>
                                         </div>
                                     }
                                 />
