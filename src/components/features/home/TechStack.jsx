@@ -1,5 +1,5 @@
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
     motion,
     useScroll,
@@ -64,7 +64,28 @@ function ParallaxLoop({ children, baseVelocity = 100 }) {
     const directionFactor = useRef(1);
     const [isHovered, setIsHovered] = useState(false);
 
+    // Only animate while the marquee is actually on screen, so the
+    // rAF loop doesn't keep recalculating/painting transforms forever
+    // for a row the user has already scrolled past.
+    const containerRef = useRef(null);
+    const isInView = useRef(false);
+
+    useEffect(() => {
+        const el = containerRef.current;
+        if (!el) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                isInView.current = entry.isIntersecting;
+            },
+            { threshold: 0 }
+        );
+        observer.observe(el);
+        return () => observer.disconnect();
+    }, []);
+
     useAnimationFrame((t, delta) => {
+        if (!isInView.current) return;
+
         // Reduce speed significantly if hovered
         const currentVelocity = isHovered ? baseVelocity * 0.2 : baseVelocity;
 
@@ -85,6 +106,7 @@ function ParallaxLoop({ children, baseVelocity = 100 }) {
 
     return (
         <div
+            ref={containerRef}
             className="overflow-hidden m-0 whitespace-nowrap flex flex-nowrap relative py-10"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

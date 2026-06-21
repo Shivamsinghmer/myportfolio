@@ -1,10 +1,16 @@
 import React from 'react';
+import Image from 'next/image';
 
-const Logo = () => {
+const Logo = ({ className = 'w-14 h-14' }) => {
     return (
-        <>
-            <img className='w-14 h-14' src="/logo.png" alt="Shivam Singh Mer Logo" />
-        </>
+        <Image
+            className={className}
+            src="/logo.png"
+            alt="Shivam Singh Mer Logo"
+            width={56}
+            height={56}
+            priority
+        />
     );
 };
 

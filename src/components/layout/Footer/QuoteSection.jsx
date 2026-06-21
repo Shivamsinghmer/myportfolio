@@ -1,9 +1,31 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { motion } from 'motion/react';
 const quoteVideo = "/vids/quote-banner.mp4";
 
 const QuoteSection = () => {
+    const videoRef = useRef(null);
+
+    // The video has loop+autoPlay with a constant CSS grayscale filter applied,
+    // which keeps decoding/compositing every frame forever. Pause it whenever
+    // it's scrolled out of view so it isn't burning CPU/GPU on a hidden element.
+    useEffect(() => {
+        const el = videoRef.current;
+        if (!el) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    el.play().catch(() => {});
+                } else {
+                    el.pause();
+                }
+            },
+            { threshold: 0 }
+        );
+        observer.observe(el);
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <div className="relative w-full py-16 md:py-24 flex flex-col items-center justify-center overflow-hidden">
             {/* Video Background */}
@@ -16,12 +38,12 @@ const QuoteSection = () => {
                 }}
             >
                 <video
+                    ref={videoRef}
                     autoPlay
                     loop
                     muted
                     playsInline
-                    loading="lazy"
-                    preload="none"
+                    preload="metadata"
                     className="w-full h-full object-cover opacity-60 md:opacity-60 dark:opacity-40 dark:md:opacity-40 grayscale"
                 >
                     <source src={typeof quoteVideo === 'string' ? quoteVideo : quoteVideo.src} type="video/mp4" />
